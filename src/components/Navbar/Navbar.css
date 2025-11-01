@@ -1,0 +1,33 @@
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+ ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+ul li {
+  margin: 20px;
+}
+ul li a {
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+ul li a:hover {
+  background: #fff;
+  color: #9506f5;
+}
+.logo{
+    font-size: 25px;
+ 
+}
+
+
+
+
