@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Ahmad-Izaldeen/static/css/main.9628ca05.css",
+    "main.js": "/Portfolio-Ahmad-Izaldeen/static/js/main.51ad1ecf.js",
+    "static/media/ahmad.jpg": "/Portfolio-Ahmad-Izaldeen/static/media/ahmad.646a534e91bfbc177292.jpg",
+    "index.html": "/Portfolio-Ahmad-Izaldeen/index.html",
+    "main.9628ca05.css.map": "/Portfolio-Ahmad-Izaldeen/static/css/main.9628ca05.css.map",
+    "main.51ad1ecf.js.map": "/Portfolio-Ahmad-Izaldeen/static/js/main.51ad1ecf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9628ca05.css",
+    "static/js/main.51ad1ecf.js"
+  ]
+}
