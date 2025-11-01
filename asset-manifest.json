@@ -1,14 +1,21 @@
 {
   "files": {
     "main.css": "/Portfolio-Ahmad-Izaldeen/static/css/main.9628ca05.css",
-    "main.js": "/Portfolio-Ahmad-Izaldeen/static/js/main.51ad1ecf.js",
+    "main.js": "/Portfolio-Ahmad-Izaldeen/static/js/main.f5fdcd6c.js",
     "static/media/ahmad.jpg": "/Portfolio-Ahmad-Izaldeen/static/media/ahmad.646a534e91bfbc177292.jpg",
+    "static/media/mountains7.webp": "/Portfolio-Ahmad-Izaldeen/static/media/mountains7.c3a1d38f3a92af1bcf0c.webp",
+    "static/media/mountains3.webp": "/Portfolio-Ahmad-Izaldeen/static/media/mountains3.3251d09fada069d729d2.webp",
+    "static/media/mountains4.webp": "/Portfolio-Ahmad-Izaldeen/static/media/mountains4.b4eedc8eea96027d83c4.webp",
+    "static/media/moon2.webp": "/Portfolio-Ahmad-Izaldeen/static/media/moon2.7efea300a801630dc58f.webp",
+    "static/media/stars1.webp": "/Portfolio-Ahmad-Izaldeen/static/media/stars1.08224dd75530b79083da.webp",
+    "static/media/boat6.webp": "/Portfolio-Ahmad-Izaldeen/static/media/boat6.dda464b0651510d22795.webp",
+    "static/media/river5.webp": "/Portfolio-Ahmad-Izaldeen/static/media/river5.543a76e286b5d1ef8b98.webp",
     "index.html": "/Portfolio-Ahmad-Izaldeen/index.html",
     "main.9628ca05.css.map": "/Portfolio-Ahmad-Izaldeen/static/css/main.9628ca05.css.map",
-    "main.51ad1ecf.js.map": "/Portfolio-Ahmad-Izaldeen/static/js/main.51ad1ecf.js.map"
+    "main.f5fdcd6c.js.map": "/Portfolio-Ahmad-Izaldeen/static/js/main.f5fdcd6c.js.map"
   },
   "entrypoints": [
     "static/css/main.9628ca05.css",
-    "static/js/main.51ad1ecf.js"
+    "static/js/main.f5fdcd6c.js"
   ]
 }
