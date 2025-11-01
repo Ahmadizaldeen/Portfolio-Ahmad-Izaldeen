@@ -1,5 +1,12 @@
 import { useRef, useEffect } from "react";
 import './Hero.css';
+import stars from '../../assets/stars1.webp';
+import moon from '../../assets/moon2.webp';
+import mountains3 from '../../assets/mountains3.webp';
+import mountains4 from '../../assets/mountains4.webp';
+import river5 from '../../assets/river5.webp';
+import boat6 from '../../assets/boat6.webp';
+import mountains7 from '../../assets/mountains7.webp';
 
 function HeroS() {
   const starsRef = useRef(null);
@@ -47,14 +54,23 @@ function HeroS() {
   return (
     <>
       <section className="main" ref={mainRef} id="home">
-        <img src="/img/stars1.webp" alt="stars" id="stars" ref={starsRef} />
-        <img src="/img/moon2.webp" alt="moon" id="moon" ref={moonRef} />
+        {/* <img src={`${process.env.PUBLIC_URL}/images/stars1.webp`} alt="Stars" />
+<img src={`${process.env.PUBLIC_URL}/images/moon2.webp`} alt="Stars" />
+
+<img src={`${process.env.PUBLIC_URL}/images/mountains3.webp`} alt="Stars" />
+<img src={`${process.env.PUBLIC_URL}/images/mountains4.webp`} alt="Stars" />
+<img src={`${process.env.PUBLIC_URL}/images/river5.webp`} alt="Stars" />
+<img src={`${process.env.PUBLIC_URL}/images/boat6.webp`} alt="Stars" />
+<img src={`${process.env.PUBLIC_URL}/images/mountains7.webp`} alt="Stars" /> */}
+
+  <img src={stars} alt="stars" id="stars" ref={starsRef} />
+  <img src={moon} alt="moon" id="moon" ref={moonRef} />
         <h2 className="ahmad" ref={ahmadRef}>MOIN!</h2>
-        <img src="/img/mountains3.webp" alt="" id="mountains3" ref={mountains3Ref} />
-        <img src="/img/mountains4.webp" alt="" id="mountains4" ref={mountains4Ref} />
-        <img src="/img/river5.webp" alt="" id="river" ref={riverRef} />
-        <img src="/img/boat6.webp" alt="" id="boat" ref={boatRef} />
-        <img src="/img/mountains7.webp" alt="" id="mountains7" />
+  <img src={mountains3} alt="" id="mountains3" ref={mountains3Ref} />
+  <img src={mountains4} alt="" id="mountains4" ref={mountains4Ref} />
+  <img src={river5} alt="" id="river" ref={riverRef} />
+  <img src={boat6} alt="" id="boat" ref={boatRef} />
+  <img src={mountains7} alt="" id="mountains7" />
       </section>
       
     </>
