@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 
 import About from './components/About/About';
@@ -10,6 +11,9 @@ import HeroS from './components/Hero/HeroS';
 import SideNavbar from './components/SideNavbar/SideNavbar';
 
 function App() {
+    useEffect(() => {
+    document.body.style.zoom = "90%"; // مثلاً
+  }, []);
   return (
     <div className="font-sans text-gray-900 ">
       
