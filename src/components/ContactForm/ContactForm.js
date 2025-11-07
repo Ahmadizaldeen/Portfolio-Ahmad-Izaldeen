@@ -5,7 +5,7 @@ function ContactForm() {
   const { name, email, setName, setEmail, handleSubmit } = useContactForm();
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" id="contact">
       <h2>Kontaktformular</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">

@@ -5,10 +5,10 @@ import styles from "./Contact.module.css";
 
 export default function Contact() {
   return (
-    <section id="contact" className={styles.section}>
+    <section id="contact1" className={styles.section}>
       <h2 className={styles.heading}>Contact Me</h2>
-      <p className={styles.text}>تواصل معي عبر البريد أو LinkedIn</p>
-      <a href="mailto:youremail@example.com" className={styles.contactLink}>
+      <p className={styles.text}>تواصل معي عبر البريد  </p>
+      <a href="mailto:ahmad.izaldeen@gmx.de" className={styles.contactLink}>
         Email Me
       </a>
     </section>

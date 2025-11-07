@@ -28,8 +28,9 @@ function App() {
       <Projects id="projects"/>
       <Contact id="contact"/> 
       <ContactForm />
+      <ContactForm id="contact"/>
       <Footer />
-      
+      {/* {/*contact Compo in ContactForm verschiben} */}
      
     </div>
   );
