@@ -32,10 +32,26 @@
   background-color: #f7f7f7;
   padding: 20px;
   border-radius: 10px;
+  /* transition: opacity 0.3s ease;
+  opacity: 1; */
 }
-
+.about-text.fade {
+  opacity: 0;
+}
 .rtl {
   direction: rtl;
   text-align: right;
   font-family: "Amiri", serif; /* schöner für Arabisch */
 }
+.button-group button.active {
+  background-color: #200016;
+  color: white;
+  border-radius: 8px;
+  transform: scale(1.05);
+  border: 1px solid #fff;
+}
+.about-text.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
