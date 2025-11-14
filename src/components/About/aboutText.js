@@ -16,3 +16,6 @@ My experience includes replacing defective components and soldering ports such a
 Nowadays, I focus on building software instead of fixing hardware. I enjoy experimenting with code and turning ideas into reality – whether in the frontend with React or the backend with Node.js and Python.
 My goal is to create projects I can be proud of, and to never stop learning.`
   };
+
+//   Internationalisierung (i18n).? /react-i18next
+//   i18next-browser-languagedetector → erkennt automatisch die Sprache des Nutzers
