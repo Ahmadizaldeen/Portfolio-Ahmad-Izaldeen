@@ -15,7 +15,6 @@ function HeroS() {
   const mountains4Ref = useRef(null);
   const riverRef = useRef(null);
   const boatRef = useRef(null);
-  const ahmadRef = useRef(null);
   const mainRef = useRef(null);
 
   useEffect(() => {
@@ -31,14 +30,8 @@ function HeroS() {
         boatRef.current.style.top = value + "px";
         boatRef.current.style.left = value * 5 + "px";
       }
-      if (ahmadRef.current) {
-        ahmadRef.current.style.fontSize = value + "px";
-        if (value >= 90) {
-          ahmadRef.current.style.fontSize = "90px";
-          ahmadRef.current.style.position = "fixed";
-          ahmadRef.current.style.display = value >= 478 ? "none" : "block";
-        }
-      }
+      
+      
       if (mainRef.current) {
         mainRef.current.style.background =
           value >= 203
@@ -54,25 +47,14 @@ function HeroS() {
   return (
     <>
       <section className="main" ref={mainRef} id="home">
-        {/* <img src={`${process.env.PUBLIC_URL}/images/stars1.webp`} alt="Stars" />
-<img src={`${process.env.PUBLIC_URL}/images/moon2.webp`} alt="Stars" />
-
-<img src={`${process.env.PUBLIC_URL}/images/mountains3.webp`} alt="Stars" />
-<img src={`${process.env.PUBLIC_URL}/images/mountains4.webp`} alt="Stars" />
-<img src={`${process.env.PUBLIC_URL}/images/river5.webp`} alt="Stars" />
-<img src={`${process.env.PUBLIC_URL}/images/boat6.webp`} alt="Stars" />
-<img src={`${process.env.PUBLIC_URL}/images/mountains7.webp`} alt="Stars" /> */}
-
-  <img src={stars} alt="stars" id="stars" ref={starsRef} />
-  <img src={moon} alt="moon" id="moon" ref={moonRef} />
-        <h2 className="ahmad" ref={ahmadRef}>MOIN!</h2>
-  <img src={mountains3} alt="" id="mountains3" ref={mountains3Ref} />
-  <img src={mountains4} alt="" id="mountains4" ref={mountains4Ref} />
-  <img src={river5} alt="" id="river" ref={riverRef} />
-  <img src={boat6} alt="" id="boat" ref={boatRef} />
-  <img src={mountains7} alt="" id="mountains7" />
+      <img src={stars} alt="stars" id="stars" ref={starsRef} />
+      <img src={moon} alt="moon" id="moon" ref={moonRef} />
+      <img src={mountains3} alt="" id="mountains3" ref={mountains3Ref} />
+      <img src={mountains4} alt="" id="mountains4" ref={mountains4Ref} />
+      <img src={river5} alt="" id="river" ref={riverRef} />
+      <img src={boat6} alt="" id="boat" ref={boatRef} />
+      <img src={mountains7} alt="" id="mountains7" />
       </section>
-      
     </>
   );
 }
