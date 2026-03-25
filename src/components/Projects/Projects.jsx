@@ -4,10 +4,9 @@ import styles from "./Projects.module.css";
 
 export default function Projects() {
   const projects = [
-    { name: "Weather App", desc: "HTML - CSS - Java Script APP wiht API, Debounce, cach Data, async Funktion, fetch URL, response json and more ..", link: "https://github.com/Ahmadizaldeen/WeatherAI.git" },
-    { name: "Project 2", desc: "In Bearbeitung", link: "#" },
-    { name: "Project 3", desc: "In Bearbeitung", link: "#" },
-    
+    { name: "Weather App", desc: "Web-App mit API, HTML, CSS, JavaScript", link: "https://github.com/Ahmadizaldeen/WeatherAI.git" },
+    { name: "PCAP Training Tool", desc: "Python Projekt zu PCAP Prüfung", link: "https://github.com/Ahmadizaldeen/pcap_training_tool.git" },
+    { name: "Listium", desc: "GUI Python Anwendung, Listenverwaltung", link: "https://github.com/Ahmadizaldeen/FlashMob.git" },
   ];
 
   return (
@@ -16,8 +15,10 @@ export default function Projects() {
       <div className={styles.projectsContainer}>
         {projects.map(project => (
           <div key={project.name} className={styles.projectCard}>
-            <h3 className={styles.projectName}>{project.name}</h3>
-            <p className={styles.projectDesc}>{project.desc}</p>
+            <div className={styles.projectContent}>
+              <h3 className={styles.projectName}>{project.name}</h3>
+              <p className={styles.projectDesc}>{project.desc}</p>
+            </div>
             <a href={project.link} className={styles.projectLink}>zu Git-Hub</a>
           </div>
         ))}
