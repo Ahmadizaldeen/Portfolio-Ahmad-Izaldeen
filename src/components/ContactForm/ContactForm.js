@@ -2,7 +2,7 @@ import "./ContactForm.css";
 import useContactForm from "../../hooks/useContactForm";
 
 function ContactForm() {
-  const { name, email, setName, setEmail,message, setMessage, handleSubmit } = useContactForm();
+  const { name, email, setName, setEmail,message, setMessage, handleSubmit, status, statusType } = useContactForm();
 
   return (
     <div className="contact-form" id="contact">
@@ -43,6 +43,11 @@ function ContactForm() {
         </div>
         <button type="submit">Abschicken</button>
       </form>
+      {status && (
+        <p className={`contact-status ${statusType}`}>
+          {status}
+        </p>
+      )}
     </div>
   );
 }
