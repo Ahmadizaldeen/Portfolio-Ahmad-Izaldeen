@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function useContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
+  const [statusType, setStatusType] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     setStatus("Sende Nachricht...");
+    setStatusType("sending")
 
     const formData = new FormData();
     formData.append("name", name);
@@ -16,25 +18,34 @@ function useContactForm() {
     formData.append("message", message);
 
     try {
-      const response = await fetch("https://formspree.io/f/mjgpybvr", { // ormspree Endpoint
+      const response = await fetch("https://formspree.io/f/mjgpybvr", { 
         method: "POST",
         body: formData,
-        headers: {
-          "Accept": "application/json",
-        },
+        headers: {Accept: "application/json"},
       });
+
 if (response.ok) {
         setStatus("Nachricht erfolgreich gesendet!");
+        setStatusType("success")
         setName("");
         setEmail("");
         setMessage("");
       } else {
         setStatus("Fehler beim Senden. Bitte erneut versuchen.");
+        setStatusType("error")
       }
     } catch (error) {
       setStatus("Fehler beim Senden. Bitte erneut versuchen.");
+      setStatusType("error")
     }
   };
+
+  useEffect(() => {
+    if (statusType === "success" || statusType ==="error"){
+      const timer = setTimeout(() => setStatus(""), 5000);
+      return () => clearTimeout(timer)
+    }
+  },[statusType])
 
   return {
     name,
@@ -44,6 +55,7 @@ if (response.ok) {
     message,
     setMessage,
     status,
+    statusType,
     handleSubmit,
   };
 }
