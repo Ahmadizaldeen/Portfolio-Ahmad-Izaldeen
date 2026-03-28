@@ -18,6 +18,8 @@
 }
 
 .projectCard {
+  display: grid;
+  grid-template-rows: 1fr auto; /* Inhalt nimmt Platz, Button am Ende */
   background-color: #fff;
   border-radius: 12px;
   padding: 20px;
@@ -44,12 +46,13 @@
 }
 
 .projectLink {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: #fff;
   background-color: #3b82f6;
   padding: 8px 16px;
   border-radius: 6px;
+  text-align: center;
   transition: background-color 0.3s;
 }
 
