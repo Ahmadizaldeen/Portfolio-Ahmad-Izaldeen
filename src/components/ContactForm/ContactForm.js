@@ -2,11 +2,11 @@ import "./ContactForm.css";
 import useContactForm from "../../hooks/useContactForm";
 
 function ContactForm() {
-  const { name, email, setName, setEmail, handleSubmit } = useContactForm();
+  const { name, email, setName, setEmail,message, setMessage, handleSubmit } = useContactForm();
 
   return (
     <div className="contact-form" id="contact">
-      <h2>Kontaktformular</h2>
+      <h2>Kontakt to Ahmad</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
@@ -27,12 +27,19 @@ function ContactForm() {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="deine@email.de"
+            placeholder="Deine E-Mail"
             required
           />
         </div>
-        <div>
-            <input type="textarea" style={{display:"none"}}/> {/**/}
+        <div className="form-group">
+          <label htmlFor="message">Nachricht:</label>
+          <textarea
+            id="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            placeholder="Deine Nachricht"
+            required
+          />
         </div>
         <button type="submit">Abschicken</button>
       </form>
