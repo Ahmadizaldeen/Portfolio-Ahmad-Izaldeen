@@ -1,9 +1,16 @@
 /* index.css */
 @import url('https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css');
 
-/* أي CSS إضافي */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  
+}
+
+/* Layout: max-width für Inhalte statt früherem body-Zoom (Issue #3) */
+.app-shell {
+  max-width: min(1200px, 100%);
+  margin-inline: auto;
+  padding-inline: clamp(0.75rem, 3vw, 1.5rem);
+  box-sizing: border-box;
+  width: 100%;
 }

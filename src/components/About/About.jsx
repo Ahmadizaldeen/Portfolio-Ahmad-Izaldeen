@@ -3,7 +3,7 @@ import "./AboutMe.css";
 import ProfilePhoto from "../ProfilePhoto/ProfilePhoto";
 import { texts } from "./aboutText";
 
-export default function AboutMe() {
+export default function AboutMe({ id = "about" }) {
   const [language, setLanguage] = useState("de");
   const [fade, setFade] = useState(false);
   // Sprache wechseln mit sanfter Animation
@@ -17,7 +17,7 @@ export default function AboutMe() {
   };
 
   return (
-    <div className="about-container" id="about">
+    <div className="about-container" id={id}>
       <ProfilePhoto />
 
       <div className="button-group">

@@ -19,7 +19,6 @@ a{
 .header{
     position: absolute;
     width: 95%;
-    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +26,6 @@ a{
     z-index: 1000; 
     
 }
-.header 
 .header ul{
     display: flex;
     justify-content: center;
