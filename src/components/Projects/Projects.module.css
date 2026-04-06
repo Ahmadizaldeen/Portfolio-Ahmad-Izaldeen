@@ -41,8 +41,28 @@
 
 .projectDesc {
   font-size: 1rem;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   color: #555;
+}
+
+.tagList {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: rgba(30, 58, 138, 0.12);
+  color: #1e40af;
 }
 
 .projectLink {
