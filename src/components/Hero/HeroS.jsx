@@ -19,34 +19,42 @@ function HeroS({ id = "home" }) {
   const mainRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const value = window.scrollY;
+    let rafId = null;
 
-      if (starsRef.current) starsRef.current.style.left = value + "px";
-      if (moonRef.current) moonRef.current.style.top = value * 3 + "px";
-      if (heroTextRef.current) {
-        heroTextRef.current.style.top = value * 3 + "px";
-        heroTextRef.current.style.opacity = String(Math.max(0, 1 - value / 200));
-      }
-      if (mountains3Ref.current) mountains3Ref.current.style.top = value * 2 + "px";
-      if (mountains4Ref.current) mountains4Ref.current.style.top = value * 1.5 + "px";
-      if (riverRef.current) riverRef.current.style.top = value + "px";
-      if (boatRef.current) {
-        boatRef.current.style.top = value + "px";
-        boatRef.current.style.left = value * 5 + "px";
-      }
-      
-      
-      if (mainRef.current) {
-        mainRef.current.style.background =
-          value >= 203
-            ? "linear-gradient(#376281,#10001f)"
-            : "linear-gradient(#200016,#10001f)";
-      }
+    const handleScroll = () => {
+      if (rafId !== null) return;
+      rafId = requestAnimationFrame(() => {
+        rafId = null;
+        const value = window.scrollY;
+
+        if (starsRef.current) starsRef.current.style.left = value + "px";
+        if (moonRef.current) moonRef.current.style.top = value * 3 + "px";
+        if (heroTextRef.current) {
+          heroTextRef.current.style.top = value * 3 + "px";
+          heroTextRef.current.style.opacity = String(Math.max(0, 1 - value / 200));
+        }
+        if (mountains3Ref.current) mountains3Ref.current.style.top = value * 2 + "px";
+        if (mountains4Ref.current) mountains4Ref.current.style.top = value * 1.5 + "px";
+        if (riverRef.current) riverRef.current.style.top = value + "px";
+        if (boatRef.current) {
+          boatRef.current.style.top = value + "px";
+          boatRef.current.style.left = value * 5 + "px";
+        }
+
+        if (mainRef.current) {
+          mainRef.current.style.background =
+            value >= 203
+              ? "linear-gradient(#376281,#10001f)"
+              : "linear-gradient(#200016,#10001f)";
+        }
+      });
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (rafId !== null) cancelAnimationFrame(rafId);
+    };
   }, []);
 
   return (
