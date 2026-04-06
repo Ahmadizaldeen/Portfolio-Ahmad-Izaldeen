@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from "./Projects.module.css";
 
-export default function Projects() {
+export default function Projects({ id = "projects" }) {
   const projects = [
     { name: "Weather App", desc: "Web-App mit API, HTML, CSS, JavaScript", link: "https://github.com/Ahmadizaldeen/WeatherAI.git" },
     { name: "PCAP Training Tool", desc: "Python Projekt zu PCAP Prüfung", link: "https://github.com/Ahmadizaldeen/pcap_training_tool.git" },
@@ -10,7 +10,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className={styles.section}>
+    <section id={id} className={styles.section}>
       <h2 className={styles.heading}>Projects</h2>
       <div className={styles.projectsContainer}>
         {projects.map(project => (
@@ -19,7 +19,14 @@ export default function Projects() {
               <h3 className={styles.projectName}>{project.name}</h3>
               <p className={styles.projectDesc}>{project.desc}</p>
             </div>
-            <a href={project.link} className={styles.projectLink}>zu Git-Hub</a>
+            <a
+              href={project.link}
+              className={styles.projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Auf GitHub
+            </a>
           </div>
         ))}
       </div>
