@@ -81,3 +81,8 @@
   box-shadow: 0 0 10px var(--shadowcolor);
   color: var(--backcolor);
 }
+@media (max-width: 768px) {
+  .side-navbar {
+    display: none;
+  }
+}
