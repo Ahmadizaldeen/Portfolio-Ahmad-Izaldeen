@@ -23,26 +23,7 @@ a{
     justify-content: space-between;
     align-items: center;
     margin: 30px;
-    z-index: 1000; 
-    
-}
-.header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-
-.header ul li{
-    margin: 20px;
-}
-.header ul li a{
-    padding: 6px 15px;
-    border-radius: 20px;
-}
-.header ul li a:hover {
-    background: #fff;
-    color: #9506f5;
+    z-index: 1000;
 }
 .main{
     position: relative;

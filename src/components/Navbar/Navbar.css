@@ -1,35 +1,92 @@
+/* Navbar: Basis passt zu .header in Hero.css; Mobile-Menü unter 768px */
 
-a {
+.logo {
+  font-size: 25px;
+  color: #fff;
   text-decoration: none;
-  
 }
 
+.header-menu-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 8px;
+  background: rgba(32, 0, 22, 0.6);
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+}
 
- ul {
+.header-menu-btn:hover {
+  background: rgba(32, 0, 22, 0.85);
+}
+
+.header-nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-ul li {
+.header-nav ul li {
   margin: 20px;
 }
-ul li a {
+
+.header-nav ul li a {
   padding: 6px 15px;
   border-radius: 20px;
   color: #fff;
+  text-decoration: none;
 }
-ul li a:hover {
+
+.header-nav ul li a:hover {
   background: #fff;
   color: #9506f5;
 }
-.logo{
-    font-size: 25px;
-    color: #fff;
- 
+
+@media (max-width: 767px) {
+  .header-menu-btn {
+    display: flex;
+  }
+
+  .header-nav {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #200016;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    transition: max-height 0.35s ease, opacity 0.25s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .header-nav.header-nav--open {
+    max-height: 320px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    padding: 12px 0 20px;
+    width: 100%;
+  }
+
+  .header-nav ul li {
+    margin: 8px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-nav ul li a {
+    display: inline-block;
+    width: auto;
+  }
 }
-
-
-
-

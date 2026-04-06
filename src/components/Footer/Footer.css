@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-copy {
+  margin: 0;
+}
+
+.footer-social {
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.footer-social:hover,
+.footer-social:focus-visible {
+  color: #9506f5;
+  outline: none;
+}

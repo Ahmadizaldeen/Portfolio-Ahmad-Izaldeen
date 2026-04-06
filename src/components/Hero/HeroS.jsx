@@ -26,19 +26,40 @@ function HeroS({ id = "home" }) {
       rafId = requestAnimationFrame(() => {
         rafId = null;
         const value = window.scrollY;
+        const useParallax = window.innerWidth >= 768;
 
-        if (starsRef.current) starsRef.current.style.left = value + "px";
-        if (moonRef.current) moonRef.current.style.top = value * 3 + "px";
-        if (heroTextRef.current) {
-          heroTextRef.current.style.top = value * 3 + "px";
-          heroTextRef.current.style.opacity = String(Math.max(0, 1 - value / 200));
-        }
-        if (mountains3Ref.current) mountains3Ref.current.style.top = value * 2 + "px";
-        if (mountains4Ref.current) mountains4Ref.current.style.top = value * 1.5 + "px";
-        if (riverRef.current) riverRef.current.style.top = value + "px";
-        if (boatRef.current) {
-          boatRef.current.style.top = value + "px";
-          boatRef.current.style.left = value * 5 + "px";
+        if (useParallax) {
+          if (starsRef.current) starsRef.current.style.left = value + "px";
+          if (moonRef.current) moonRef.current.style.top = value * 3 + "px";
+          if (heroTextRef.current) {
+            heroTextRef.current.style.top = value * 3 + "px";
+            heroTextRef.current.style.opacity = String(
+              Math.max(0, 1 - value / 200)
+            );
+          }
+          if (mountains3Ref.current)
+            mountains3Ref.current.style.top = value * 2 + "px";
+          if (mountains4Ref.current)
+            mountains4Ref.current.style.top = value * 1.5 + "px";
+          if (riverRef.current) riverRef.current.style.top = value + "px";
+          if (boatRef.current) {
+            boatRef.current.style.top = value + "px";
+            boatRef.current.style.left = value * 5 + "px";
+          }
+        } else {
+          if (starsRef.current) starsRef.current.style.left = "";
+          if (moonRef.current) moonRef.current.style.top = "";
+          if (heroTextRef.current) {
+            heroTextRef.current.style.top = "";
+            heroTextRef.current.style.opacity = "";
+          }
+          if (mountains3Ref.current) mountains3Ref.current.style.top = "";
+          if (mountains4Ref.current) mountains4Ref.current.style.top = "";
+          if (riverRef.current) riverRef.current.style.top = "";
+          if (boatRef.current) {
+            boatRef.current.style.top = "";
+            boatRef.current.style.left = "";
+          }
         }
 
         if (mainRef.current) {
