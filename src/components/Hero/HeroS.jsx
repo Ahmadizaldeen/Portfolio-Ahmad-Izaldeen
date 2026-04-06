@@ -8,7 +8,7 @@ import river5 from '../../assets/river5.webp';
 import boat6 from '../../assets/boat6.webp';
 import mountains7 from '../../assets/mountains7.webp';
 
-function HeroS() {
+function HeroS({ id = "home" }) {
   const starsRef = useRef(null);
   const moonRef = useRef(null);
   const mountains3Ref = useRef(null);
@@ -46,7 +46,7 @@ function HeroS() {
 
   return (
     <>
-      <section className="main" ref={mainRef} id="home">
+      <section className="main" ref={mainRef} id={id}>
       <img src={stars} alt="stars" id="stars" ref={starsRef} />
       <img src={moon} alt="moon" id="moon" ref={moonRef} />
       <img src={mountains3} alt="" id="mountains3" ref={mountains3Ref} />
