@@ -13,7 +13,7 @@ const skills = [
   { name: "C/C++", level: 50 }
 ];
 
-export default function Skills() {
+export default function Skills({ id = "skills" }) {
   const progressRefs = useRef([]);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ export default function Skills() {
   }, []); // leer, weil skills konstant
 
   return (
-    <section id="skills" className={styles.section}>
+    <section id={id} className={styles.section}>
       <h2 className={styles.heading}>Skills</h2>
       <div className={styles.skillContainer}>
         {skills.map((skill, index) => (
