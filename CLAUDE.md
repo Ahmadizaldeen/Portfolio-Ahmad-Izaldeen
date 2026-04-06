@@ -35,11 +35,11 @@
 
 ## Sprint-Plan (1 Tag pro Sprint)
 - [x] Sprint 0: Analyse & Planung ✓
-- [ ] Sprint 1: Bugs & Cleanup
-- [ ] Sprint 2: Hero Text + Parallax Fade
-- [ ] Sprint 3: Inhalte & Komponenten
-- [ ] Sprint 4: Responsive & Polish
-- [ ] Sprint 5: Deployment & README
+- [x] Sprint 1: Bugs & Cleanup
+- [x] Sprint 2: Hero Text + Parallax Fade
+- [x] Sprint 3: Inhalte & Komponenten
+- [x] Sprint 4: Responsive & Polish
+- **Aktuell:** Sprint 5 — Deployment & README
 
 ## Coding-Regeln
 - CSS Modules für neue Komponenten
@@ -49,4 +49,4 @@
 - Kein document.body direkt manipulieren
 
 ## Nächster Schritt
-Cursor installieren und Sprint 1 starten
+Sprint 5 abschließen: Live-URL in README (`[LIVE_URL]`) setzen, optional Screenshots ergänzen, deployen (z. B. `npm run deploy` / GitHub Pages).
