@@ -73,12 +73,16 @@ a{
     position: absolute;
     left: 50%;
     transform: translateX(-50%) translateY(160px);
-    z-index: 10;
+    z-index: 20;
+    isolation: isolate;
     width: min(90vw, 720px);
     text-align: center;
     color: #fff;
     pointer-events: none;
-    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.55);
+    text-shadow: 
+        0 0 20px rgba(0, 0, 0, 0.9),
+        0 0 40px rgba(0, 0, 0, 0.8),
+        0 2px 4px rgba(0, 0, 0, 1);
 }
 
 .hero-name {
@@ -140,9 +144,10 @@ a{
         transform: translateY(6px);
     }
 }
-#moon{
+#moon {
     mix-blend-mode: screen;
-    transform: translateY(100px);
+    transform: translateY(100px) translateX(-35vw);
+    z-index: 0;
 }
 
 
