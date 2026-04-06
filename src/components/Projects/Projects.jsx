@@ -4,9 +4,30 @@ import styles from "./Projects.module.css";
 
 export default function Projects({ id = "projects" }) {
   const projects = [
-    { name: "Weather App", desc: "Web-App mit API, HTML, CSS, JavaScript", link: "https://github.com/Ahmadizaldeen/WeatherAI.git" },
-    { name: "PCAP Training Tool", desc: "Python Projekt zu PCAP Prüfung", link: "https://github.com/Ahmadizaldeen/pcap_training_tool.git" },
-    { name: "Listium", desc: "GUI Python Anwendung, Listenverwaltung", link: "https://github.com/Ahmadizaldeen/FlashMob.git" },
+    {
+      name: "Portfolio Website",
+      desc: "Diese Portfolio-Seite mit Parallax-Hero, Skills und Kontaktformular.",
+      link: "https://github.com/Ahmadizaldeen/Portfolio-Ahmad-Izaldeen",
+      tags: ["React", "CSS Modules", "Formspree", "react-icons"],
+    },
+    {
+      name: "Weather App",
+      desc: "Web-App mit API, HTML, CSS, JavaScript",
+      link: "https://github.com/Ahmadizaldeen/WeatherAI.git",
+      tags: ["HTML", "CSS", "JavaScript", "API"],
+    },
+    {
+      name: "PCAP Training Tool",
+      desc: "Python Projekt zu PCAP Prüfung",
+      link: "https://github.com/Ahmadizaldeen/pcap_training_tool.git",
+      tags: ["Python"],
+    },
+    {
+      name: "Listium",
+      desc: "GUI Python Anwendung, Listenverwaltung",
+      link: "https://github.com/Ahmadizaldeen/FlashMob.git",
+      tags: ["Python", "GUI"],
+    },
   ];
 
   return (
@@ -18,6 +39,13 @@ export default function Projects({ id = "projects" }) {
             <div className={styles.projectContent}>
               <h3 className={styles.projectName}>{project.name}</h3>
               <p className={styles.projectDesc}>{project.desc}</p>
+              <ul className={styles.tagList} aria-label="Tech-Stack">
+                {project.tags.map((tag) => (
+                  <li key={tag} className={styles.tag}>
+                    {tag}
+                  </li>
+                ))}
+              </ul>
             </div>
             <a
               href={project.link}
@@ -25,7 +53,7 @@ export default function Projects({ id = "projects" }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Auf GitHub
+              GitHub
             </a>
           </div>
         ))}

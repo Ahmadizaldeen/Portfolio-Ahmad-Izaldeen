@@ -21,10 +21,7 @@ This is a small Create React App single-page portfolio app (React + react-script
   - Images/assets: two common patterns appear:
     - Public-root images referenced like `/img/...` (these come from `public/img/` and are served at runtime).
     - Some components reference `src/assets/` directly (e.g. `HeroS.jsx` uses `/src/assets/stars1.webp`). Prefer using `public` root paths for static references unless a component imports an asset with an ES import.
-  - Forms: there are both controlled and uncontrolled form examples:
-    - Controlled: `src/hooks/useContactForm.js` + `src/components/ContactForm/ContactForm.js` (useState-driven).
-    - Uncontrolled: `src/components/ContactForm/ContactFormUncontrolled.jsx` (useRef-driven).
-    - Keep to the existing style within a component; prefer the hook-based controlled pattern when implementing new contact logic.
+  - Forms: contact uses `src/hooks/useContactForm.js` with `src/components/ContactForm/ContactForm.js` (controlled via hook). Prefer this pattern for contact changes.
   - Direct DOM interactions: `HeroS.jsx` uses many refs and `window.scroll` listeners to implement parallax. If modifying this, preserve the ref logic and remove listeners on cleanup.
 
 - Testing & linting
@@ -38,7 +35,6 @@ This is a small Create React App single-page portfolio app (React + react-script
 - Examples to reference when coding
 
   - Hook-driven form: `src/hooks/useContactForm.js` and `src/components/ContactForm/ContactForm.js`.
-  - Uncontrolled form: `src/components/ContactForm/ContactFormUncontrolled.jsx` (shows useRef usage and manual clearing).
   - Parallax hero: `src/components/Hero/HeroS.jsx` (refs + window.scroll handler + inconsistent asset paths — be cautious when changing image paths).
 
 - Safety and merge guidance for AI edits
