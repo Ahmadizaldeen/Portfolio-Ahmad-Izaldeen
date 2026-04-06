@@ -11,6 +11,7 @@ import mountains7 from '../../assets/mountains7.webp';
 function HeroS({ id = "home" }) {
   const starsRef = useRef(null);
   const moonRef = useRef(null);
+  const heroTextRef = useRef(null);
   const mountains3Ref = useRef(null);
   const mountains4Ref = useRef(null);
   const riverRef = useRef(null);
@@ -23,6 +24,10 @@ function HeroS({ id = "home" }) {
 
       if (starsRef.current) starsRef.current.style.left = value + "px";
       if (moonRef.current) moonRef.current.style.top = value * 3 + "px";
+      if (heroTextRef.current) {
+        heroTextRef.current.style.top = value * 3 + "px";
+        heroTextRef.current.style.opacity = String(Math.max(0, 1 - value / 200));
+      }
       if (mountains3Ref.current) mountains3Ref.current.style.top = value * 2 + "px";
       if (mountains4Ref.current) mountains4Ref.current.style.top = value * 1.5 + "px";
       if (riverRef.current) riverRef.current.style.top = value + "px";
@@ -49,6 +54,13 @@ function HeroS({ id = "home" }) {
       <section className="main" ref={mainRef} id={id}>
       <img src={stars} alt="stars" id="stars" ref={starsRef} />
       <img src={moon} alt="moon" id="moon" ref={moonRef} />
+      <div className="hero-text-layer" ref={heroTextRef}>
+        <p className="hero-name">Ahmad Izaldeen</p>
+        <p className="hero-subtitle">
+          Umschüler IT-Fachinformatiker · Eckernförde
+        </p>
+        <h1 className="hero-title">Fullstack &amp; Cloud Entwicklung</h1>
+      </div>
       <img src={mountains3} alt="" id="mountains3" ref={mountains3Ref} />
       <img src={mountains4} alt="" id="mountains4" ref={mountains4Ref} />
       <img src={river5} alt="" id="river" ref={riverRef} />
