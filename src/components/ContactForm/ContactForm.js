@@ -2,13 +2,14 @@ import "./ContactForm.css";
 import useContactForm from "../../hooks/useContactForm";
 
 function ContactForm({ id = "contact" }) {
-  const { name, email, setName, setEmail,message, setMessage, handleSubmit, status, statusType } = useContactForm();
+  const { name, email, setName, setEmail, message, setMessage, handleSubmit, status, statusType } =
+    useContactForm();
 
   return (
     <div className="contact-form" id={id}>
-      <h2>Kontakt to Ahmad</h2>
+      <h2>Kontakt</h2>
       <p className="contact-email">
-        <a href="mailto:ahmad.izaldeen@gmx.de">ahmad.izaldeen@gmx.de</a>
+        <a href="mailto:ai.dev.ahmad@gmail.com">ai.dev.ahmad@gmail.com</a>
       </p>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
