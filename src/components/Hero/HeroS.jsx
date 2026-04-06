@@ -65,7 +65,7 @@ function HeroS({ id = "home" }) {
       <div className="hero-text-layer" ref={heroTextRef}>
         <p className="hero-name">Ahmad Izaldeen</p>
         <p className="hero-subtitle">
-          Umschüler IT-Fachinformatiker · Eckernförde
+          Umschüler IT-Fachinformatiker · Hamburg
         </p>
         <h1 className="hero-title">Fullstack &amp; Cloud Entwicklung</h1>
       </div>
