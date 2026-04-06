@@ -74,6 +74,15 @@ function HeroS({ id = "home" }) {
       <img src={river5} alt="" id="river" ref={riverRef} />
       <img src={boat6} alt="" id="boat" ref={boatRef} />
       <img src={mountains7} alt="" id="mountains7" />
+      <a
+        href="#about"
+        className="hero-scroll-cta"
+        aria-label="Weiter zum Abschnitt Über mich"
+      >
+        <span className="hero-scroll-cta__arrow" aria-hidden="true">
+          ↓
+        </span>
+      </a>
       </section>
     </>
   );
