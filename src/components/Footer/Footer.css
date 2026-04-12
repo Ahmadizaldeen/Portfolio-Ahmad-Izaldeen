@@ -1,8 +1,8 @@
 .footer {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1rem;
   padding: 1.5rem;
   text-align: center;
@@ -24,4 +24,60 @@
 .footer-social:focus-visible {
   color: #9506f5;
   outline: none;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  width: 80%;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.footer-right{
+  display: flex;
+  align-items: center;
+  
+  gap: 1rem;
+}
+.footer-links{
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+}
+.footer-links button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
