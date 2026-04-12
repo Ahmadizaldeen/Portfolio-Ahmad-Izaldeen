@@ -9,7 +9,7 @@ function ContactForm({ id = "contact" }) {
     <div className="contact-form" id={id}>
       <h2>Kontakt</h2>
       <p className="contact-email">
-        <a href="mailto:ai.dev.ahmad@gmail.com">ai.dev.ahmad@gmail.com</a>
+        <a href="mailto:ahmad@izaldeen.de">ahmad@izaldeen.de</a>
       </p>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
