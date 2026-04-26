@@ -1,0 +1,21 @@
+.legal-container {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 24px;
+  line-height: 1.7;
+}
+
+.legal-container h1 {
+  margin-bottom: 24px;
+  font-size: 28px;
+}
+
+.legal-container h2 {
+  margin-top: 28px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.legal-container p {
+  margin-bottom: 12px;
+}
