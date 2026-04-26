@@ -11,7 +11,7 @@ export default function Datenschutz() {
           Ahmad Izaldeen<br />
           Flebbestraße 7<br />
           Deutschland<br />
-          E-Mail: info@izaldeen.de
+          E-Mail: ahmad@izaldeen.de
         </p>
       </section>
 

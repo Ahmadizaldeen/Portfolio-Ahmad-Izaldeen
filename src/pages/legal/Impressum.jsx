@@ -17,7 +17,7 @@ export default function Impressum() {
       <section>
         <h2>Kontakt</h2>
         <p>
-          E-Mail: info@izaldeen.de
+          E-Mail: ahmad@izaldeen.de
         </p>
       </section>
 
