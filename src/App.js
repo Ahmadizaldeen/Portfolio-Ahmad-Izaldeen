@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import ContactForm from './components/ContactForm/ContactForm';
 import HeroS from './components/Hero/HeroS';
 import SideNavbar from './components/SideNavbar/SideNavbar';
+import ChatBot from './components/Chatbot/ChatBot';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Skills id="skills"/>
         <Projects id="projects"/>
         <ContactForm id="contact"/>
+        <ChatBot/>
         <Footer />
       </div>
     </div>

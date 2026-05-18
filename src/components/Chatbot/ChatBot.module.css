@@ -1,0 +1,148 @@
+.container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: sans-serif;
+}
+
+/* Chat Window */
+.chatWindow {
+  margin-bottom: 16px;
+  width: 320px;
+  height: 450px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, #2563eb, #4f46e5);
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header button{
+ 
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.status {
+  width: 8px;
+  height: 8px;
+  background: #0f0;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+/* Animation */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+/* Messages */
+.messages {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 14px;
+  font-size: 14px;
+  max-width: 85%;
+}
+
+.user {
+  background: #2563eb;
+  color: white;
+  margin-left: auto;
+  border-bottom-right-radius: 4px;
+}
+
+.assistant {
+  background: white;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  border-bottom-left-radius: 4px;
+}
+
+/* Input */
+.inputArea {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #e5e7eb;
+  background: white;
+}
+
+.input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 10px;
+  background: #f3f4f6;
+  border: none;
+  outline: none;
+}
+
+.button {
+  background: #2563eb;
+  
+  color: rgb(255, 255, 255);
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background: #9ca3af;
+}
+
+/* Floating Button */
+.fab {
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  font-size: 28px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.fab:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
