@@ -2,8 +2,6 @@
 
 Persönliches Portfolio als React-Webanwendung.
 
-🔗 **Live:** [https://Ahmadizaldeen.github.io/Portfolio-Ahmad-Izaldeen](https://Ahmadizaldeen.github.io/Portfolio-Ahmad-Izaldeen)
-
 ---
 
 ## Tech-Stack
@@ -13,6 +11,7 @@ Persönliches Portfolio als React-Webanwendung.
 - **Tailwind CSS** für globale Utilities
 - **react-icons** für Icons
 - **Formspree** für das Kontaktformular
+- **Ollama** für den KI-Chatbot
 - **GitHub Pages** für das Deployment
 
 ---
@@ -27,6 +26,7 @@ Persönliches Portfolio als React-Webanwendung.
 | **Projekte** | Eigene Projekte mit GitHub-Links und Tech-Tags |
 | **Kontakt** | Formular via Formspree mit Status-Feedback |
 | **Footer** | Social Links, Impressum & Datenschutz als Dark-Modal |
+| **ChatBot** | Floating KI-Assistent powered by Ollama |
 
 ---
 
@@ -41,11 +41,13 @@ src/
 │   ├── Skills/          # Animierte Skill-Balken
 │   ├── Projects/        # Projekt-Cards im Grid
 │   ├── ContactForm/     # Kontaktformular (Formspree)
+│   ├── Chatbot/         # Floating KI-Chat-Widget
 │   ├── Footer/          # Footer + Impressum/Datenschutz Modal
 │   └── ProfilePhoto/    # Profilbild-Komponente
 ├── pages/
 │   └── legal/           # Impressum.jsx, Datenschutz.jsx
-├── hooks/               # useContactForm
+├── hooks/               # useContactForm, useChat
+├── services/            # ollamaClient
 └── styles/              # Globale Styles
 ```
 
@@ -57,6 +59,29 @@ src/
 npm install
 npm start
 ```
+
+### ChatBot einrichten
+
+Der Chatbot benötigt eine lokal laufende [Ollama](https://ollama.com)-Instanz.
+
+```bash
+# Ollama installieren und ein Modell laden
+ollama pull llama3
+
+# Ollama starten (läuft standardmäßig auf Port 11434)
+ollama serve
+```
+
+Konfiguration per Umgebungsvariablen (`.env`):
+
+```env
+REACT_APP_OLLAMA_URL=http://localhost:11434
+REACT_APP_OLLAMA_MODEL=llama3
+```
+
+> ℹ️ Ohne laufende Ollama-Instanz zeigt der Chatbot eine Fehlermeldung an. Das restliche Portfolio funktioniert weiterhin normal.
+
+---
 
 ## Deployment
 
@@ -78,13 +103,8 @@ Deployed automatisch auf GitHub Pages via `gh-pages`.
 - Kontaktformular via Formspree
 - Footer mit Social Links (GitHub, LinkedIn, E-Mail)
 - Impressum & Datenschutz als dunkle Modal-Popups (DSGVO-konform)
+- **KI-Chatbot** als Floating Widget via Ollama
 
-### 🚧 In Arbeit – Nächster Schritt
-**KI-Assistent via Ollama**
-- Integration eines lokalen KI-Chatbots direkt im Portfolio
-- Technologie: [Ollama](https://ollama.com) (lokal laufendes Sprachmodell)
-- Branch: `feat/custom-agent`
-- Geplante Features: Chat-Interface, Kontextbewusstsein über das Portfolio, DSGVO-konforme Datenschutzhinweise
 
 ---
 
