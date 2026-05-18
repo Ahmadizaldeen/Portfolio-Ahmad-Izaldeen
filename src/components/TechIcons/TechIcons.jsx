@@ -8,24 +8,24 @@ import "./TechIcons.css";
 // Animationsdauer zwischen 5s und 10s für mehr Variation.
 const icons = [
   // Frontend
-  { icon: FaReact, label: "React",      top: 38, left: 2,  animationDuration: 2.2 },
-  { icon: FaJs,    label: "JavaScript", top: 45, left: 35, animationDuration: 10, },
-  { icon: FaHtml5, label: "HTML5",      top: 70, left: 22, animationDuration: 9.2 },
-  { icon: FaCss3Alt, label: "CSS3",     top: 60, left: 12, animationDuration: 5.8 },
+  { icon: FaReact, label: "React",      top: 38, left: 2,  animationDuration: 7 },
+  { icon: FaJs,    label: "JavaScript", top: 45, left: 35, animationDuration: 8 },
+  { icon: FaHtml5, label: "HTML5",      top: 70, left: 22, animationDuration: 9 },
+  { icon: FaCss3Alt, label: "CSS3",     top: 60, left: 12, animationDuration: 8 },
   // Backend
-  { icon: FaJava,   label: "Java",    top: 50, left: 65, animationDuration: 7.5 },
-  { icon: FaPython, label: "Python",  top: 55, left: 80, animationDuration: 6.7, },
-  { icon: FaNodeJs, label: "Node.js", top: 80, left: 70, animationDuration: 9.7,},
-  { icon: FaPhp,    label: "PHP",     top: 85, left: 6, animationDuration: 5.3 },
+  { icon: FaJava,   label: "Java",    top: 50, left: 65, animationDuration: 7 },
+  { icon: FaPython, label: "Python",  top: 55, left: 80, animationDuration: 8 },
+  { icon: FaNodeJs, label: "Node.js", top: 80, left: 70, animationDuration: 6},
+  { icon: FaPhp,    label: "PHP",     top: 85, left: 6, animationDuration: 9 },
   // Tools
-  { icon: FaGitAlt, label: "Git", top: 75, left: 40, animationDuration: 7.2 },
-  { icon: FaWordpress,  label: "WordPress", top: 88, left: 55, animationDuration: 10, },
+  { icon: FaGitAlt, label: "Git", top: 75, left: 40, animationDuration: 8 },
+  { icon: FaWordpress,  label: "WordPress", top: 88, left: 55, animationDuration: 9 },
   // Cloud
-  { icon: FaAws, label: "AWS", top: 65, left: 55, animationDuration: 8.8 },
+  { icon: FaAws, label: "AWS", top: 65, left: 55, animationDuration: 6 },
   // KI
-  { icon: FaBrain, label: "AI", top: 40, left: 50, animationDuration: 5.6 },
+  { icon: FaBrain, label: "AI", top: 40, left: 50, animationDuration: 7 },
   // Scrum
-  { icon: FaUsers, label: "Agile - Scrum", top: 85, left: 85, animationDuration: 8.9 },
+  { icon: FaUsers, label: "Agile - Scrum", top: 85, left: 85, animationDuration: 8 },
 ];
 // Die Icons schweben im Bereich unterhalb des Textes (top: 35% bis 90%)
 const TechIcons = () => (
