@@ -4,30 +4,52 @@ import styles from "./Projects.module.css";
 
 export default function Projects({ id = "projects" }) {
   const projects = [
+    
+    
     {
       name: "Portfolio Website",
       desc: "Diese Portfolio-Seite mit Parallax-Hero, Skills und Kontaktformular.",
       link: "https://github.com/Ahmadizaldeen/Portfolio-Ahmad-Izaldeen",
-      tags: ["React", "CSS Modules", "Formspree", "react-icons"],
+      tags: ["React", "CSS Modules", "Formspree", "react-icons", "REST-API", "Ollama"],
+    },
+    {
+      name: "EDV-Schule Webseite",
+      desc: "vollständige webbasierte Verwaltungsplattform für ein Seminarhaus",
+      link: "https://github.com/Ahmadizaldeen/edv-schule-oop-php-sql.git",
+      tags: ["PHP 8", "MySQL 8", "PDO","XAMPP", "HTML", "CSS", "Git"],
+    },
+    {
+      name: "Webblog",
+      desc: "vollständige Frontend/Backend Weblog-Applikation",
+      link: "https://github.com/Ahmadizaldeen/Weblog-Applikation.git",
+      tags: ["PHP(Core)", "HTML5", "CSS3", "Javascript"],
+    },
+    {
+      name: "Notion Task Dashboard",
+      desc: "Fullstack-Projekt, Notion-Databank, React Frontend",
+      link: "https://github.com/Ahmadizaldeen/FlashMob.git",
+      tags: ["React, Vite", "Node.js", "Express 5", "Axios ","Notion API", "dotenv"],
     },
     {
       name: "Weather App",
       desc: "Web-App mit API, HTML, CSS, JavaScript",
       link: "https://github.com/Ahmadizaldeen/WeatherAI.git",
-      tags: ["HTML", "CSS", "JavaScript", "API"],
+      tags: ["HTML", "CSS", "JavaScript", "REST-API"],
     },
     {
       name: "PCAP Training Tool",
       desc: "Python Projekt zu PCAP Prüfung",
       link: "https://github.com/Ahmadizaldeen/pcap_training_tool.git",
-      tags: ["Python"],
+      tags: ["Python", "CLI","JSON" ,"PCAP","faker"],
     },
     {
-      name: "Listium",
-      desc: "GUI Python Anwendung, Listenverwaltung",
-      link: "https://github.com/Ahmadizaldeen/FlashMob.git",
-      tags: ["Python", "GUI"],
+      name: "In Planung...",
+      desc: "PHP Projekt",
+      link: "#",
+      tags: ["PHP", "SQL", "REST-API"],
     },
+    
+    
   ];
 
   return (
