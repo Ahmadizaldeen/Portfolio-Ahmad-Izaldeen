@@ -154,6 +154,7 @@ a {
   left: 40%;
   transform: translateX(-35vw);  
   z-index: 1;           
-  width: 320px;         
+  width: 320px;  
+  pointer-events: none; /*um zu verhindern dass das bild überdeckt alles darunter*/       
   
 }

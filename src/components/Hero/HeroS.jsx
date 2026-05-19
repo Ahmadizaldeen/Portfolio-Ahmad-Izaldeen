@@ -29,7 +29,7 @@ function HeroS({ id = "home" }) {
         moonRef.current.style.top = `${moonTop}px`;
 
         // Ab 350px scrollen → Mond wird unsichtbar
-        const opacity = Math.max(0, 1 - (value - 500) / 250);
+        const opacity = Math.max(0, 1 - (value - 350) / 250);
         moonRef.current.style.opacity = String(opacity);
 }
 
