@@ -20,13 +20,79 @@ Persönliches Portfolio als React-Webanwendung.
 
 | Section | Beschreibung |
 |---|---|
-| **Hero** | Parallax-Hintergrund mit animierten Tech-Icons |
-| **Über mich** | Dreisprachig – Deutsch, Arabisch, Englisch |
-| **Skills** | Animierte Fortschrittsbalken mit Intersection Observer |
-| **Projekte** | Eigene Projekte mit GitHub-Links und Tech-Tags |
-| **Kontakt** | Formular via Formspree mit Status-Feedback |
-| **Footer** | Social Links, Impressum & Datenschutz als Dark-Modal |
-| **ChatBot** | Floating KI-Assistent powered by Ollama |
+| Hero | Parallax-Hintergrund mit animierten Tech-Icons |
+| Über mich | Dreisprachig – Deutsch, Arabisch, Englisch |
+| Skills | Animierte Fortschrittsbalken mit Intersection Observer |
+| Projekte | Eigene Projekte mit GitHub-Links und Tech-Tags |
+| Kontakt | Formular via Formspree mit Status-Feedback |
+| Footer | Social Links, Impressum & Datenschutz als Dark-Modal |
+| ChatBot | Floating KI-Assistent powered by Ollama |
+
+---
+
+## Screenshots
+
+<h3>Hero</h3>
+<img src="Screenshots/Hero.png" width="800">
+
+<p>
+Parallax-Hintergrund mit animierten Tech-Icons für einen modernen Einstieg.
+</p>
+
+---
+
+<h3>Über mich</h3>
+<img src="Screenshots/About.png" width="800">
+
+<p>
+Mehrsprachige Darstellung in Deutsch, Arabisch und Englisch.
+</p>
+
+---
+
+<h3>Skills</h3>
+<img src="Screenshots/Skills.png" width="800">
+
+<p>
+Animierte Fortschrittsbalken mit Intersection Observer.
+</p>
+
+---
+
+<h3>Projekte</h3>
+<img src="Screenshots/Projects.png" width="800">
+
+<p>
+Eigene Projekte mit GitHub-Links und verwendeten Technologien.
+</p>
+
+---
+
+<h3>Kontakt</h3>
+<img src="Screenshots/Kontakt.png" width="800">
+
+<p>
+Kontaktformular über Formspree inklusive Status-Feedback.
+</p>
+
+---
+
+<h3>Footer</h3>
+
+<p>
+Social-Media Links, Impressum und Datenschutz im Dark-Modal.
+</p>
+
+---
+
+<h3>ChatBot</h3>
+<img src="Screenshots/Chat-bot.png" width="800">
+
+<p>
+Floating KI-Assistent auf Basis von Ollama.
+</p>
+
+---
 
 ---
 
